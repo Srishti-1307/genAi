@@ -1,1 +1,6 @@
 requests
+transformers
+torch
+huggingface_hub
+sentence-transformers
+pypdf
