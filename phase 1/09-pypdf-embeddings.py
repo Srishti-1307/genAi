@@ -40,13 +40,12 @@ def chunk_text(text, chunk_size = 400):
     return chunks
 
 
-chunk = chunk_text(text)
-print(chunk[2])
+chunk = chunk_text(text)                        # chunk is a list
 
-embeddings = model.encode(chunk)
+embeddings = model.encode(chunk)              # embeddings is n-dim array
 
 print(len(embeddings))
-print(embeddings.shape)
+print(embeddings.shape)              # So there are 3 vectors of size 384
 
 
 # PdfReader is only for textual pdfs.. not for pdfs containing images, logos, tables, symbols etc.
