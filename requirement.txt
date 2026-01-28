@@ -1,0 +1,14 @@
+requests
+transformers
+torch
+huggingface_hub
+sentence-transformers
+pypdf
+chromadb
+langchain
+langchain-community
+langchain-huggingface
+langchain-core
+langchain-ollama
+faiss-cpu
+tiktoken
