@@ -12,3 +12,6 @@ langchain-core
 langchain-ollama
 faiss-cpu
 tiktoken
+pydantic
+duckduckgo-search
+langchain_experimental
