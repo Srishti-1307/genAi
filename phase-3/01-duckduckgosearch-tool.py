@@ -5,3 +5,6 @@ tool = DuckDuckGoSearchRun()
 result = tool.invoke('UGC rule in India News')
 
 print(result)
+
+print(tool.name)
+print(tool.description)
