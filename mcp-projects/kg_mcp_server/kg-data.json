@@ -1,0 +1,130 @@
+{
+    "SalesOrder": {
+        "business_terms": ["sales order", "order", "so", "sales"],
+        "cds_view": "Z_I_SalesOrder",
+        "fields": {
+            "SalesOrder": {
+                "type": "String",
+                "filterable": true,
+                "key": true
+            },
+            "CreatedOn": {
+                "type": "Date",
+                "filterable": true
+            },
+            "Customer": {
+                "type": "String",
+                "filterable": true
+            },
+            "NetAmount": {
+                "type": "Decimal",
+                "filterable": true,
+                "aggregatable": true
+            }
+        }
+    },
+
+    "PurchaseOrder": {
+        "business_terms": ["purchase order", "po", "order", "purchase"],
+        "cds_view": "Z_I_PurchaseOrder",
+        "fields": {
+            "PurchaseOrder": {
+            "type": "String",
+            "filterable": true,
+            "key": true
+            },
+            "CreatedOn": {
+            "type": "Date",
+            "filterable": true
+            },
+            "Supplier": {
+            "type": "String",
+            "filterable": true
+            },
+            "CompanyCode": {
+            "type": "String",
+            "filterable": true
+            },
+            "NetAmount": {
+            "type": "Decimal",
+            "filterable": true,
+            "aggregatable": true
+            },
+            "Currency": {
+            "type": "String",
+            "filterable": true
+            }
+        }
+    },
+
+    "ProcessOrder": {
+    "business_terms": ["process order", "production order", "manufacturing order", "order"],
+    "cds_view": "Z_I_ProcessOrder",
+    "fields": {
+        "ProcessOrder": {
+        "type": "String",
+        "filterable": true,
+        "key": true
+        },
+        "OrderType": {
+        "type": "String",
+        "filterable": true
+        },
+        "Plant": {
+        "type": "String",
+        "filterable": true
+        },
+        "Material": {
+        "type": "String",
+        "filterable": true
+        },
+        "PlannedStartDate": {
+        "type": "Date",
+        "filterable": true
+        },
+        "PlannedEndDate": {
+        "type": "Date",
+        "filterable": true
+        },
+        "OrderQuantity": {
+        "type": "Decimal",
+        "filterable": true,
+        "aggregatable": true
+        }
+    }
+}, 
+
+    "BillingDocument": {
+        "business_terms": ["billing document", "invoice", "billing", "customer invoice"],
+        "cds_view": "Z_I_BillingDocument",
+        "fields": {
+            "BillingDocument": {
+            "type": "String",
+            "filterable": true,
+            "key": true
+            },
+            "BillingDate": {
+            "type": "Date",
+            "filterable": true
+            },
+            "SoldToParty": {
+            "type": "String",
+            "filterable": true
+            },
+            "CompanyCode": {
+            "type": "String",
+            "filterable": true
+            },
+            "BillingAmount": {
+            "type": "Decimal",
+            "filterable": true,
+            "aggregatable": true
+            },
+            "Currency": {
+            "type": "String",
+            "filterable": true
+            }
+        }
+    }
+
+}
